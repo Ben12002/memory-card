@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import '../App.css'
+import fetchPokemonData from '../data.jsx'
+import Game from './Game.jsx'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h2>Hello world!</h2>
+      <h2>Pokémon Memory Game</h2>
+      <p>Get points by clicking on an image but don't click on any more than once!</p>
+      <Game />
     </>
   )
 }
